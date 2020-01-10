@@ -1,4 +1,9 @@
 loggarsi con utente `postgres`    
+
+    per loggarsi come un utente su un database: 
+    `psql -U nome_utente -d nome_database`
+
+
 entrare in un database (`psql nome_database`)  
 comando `create user nome_utente`  
 cambiare owner `ALTER DATABASE nome_database OWNER TO nome_utente`  
@@ -10,5 +15,3 @@ modificare il file `sudo nano /etc/postgresql/11/main/pg_hba.conf` alla riga
 local   all             all                                     peer
 ```
 cambia peer con md5  
-
-per loggarsi come un utente su un database: `psql -U nome_utente -d nome_database`
